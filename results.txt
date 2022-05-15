@@ -1,0 +1,100 @@
+Name: Yukun Shan		Partner: Haichen Xu 
+
+Email: yshan@bu.edu	Partner's email: xhcbu@bu.edu
+
+
+
+puzzles with 5-move optimal solutions
+-------------------------------------
+algorithm                num. solved    avg. moves    avg. states tested
+------------------------------------------------------------------------
+random			   10		 5.4		208.7
+BFS			   10		 5.0		47.1
+DFS (depth limit 20)	   10		 16.2		11468.1
+DFS (depth limit 50)	   10		 48.2		29558.6
+Greedy Search (using h1)    10		 5.4		70.3
+A* (using h1)		   10		 5.0		6.5
+
+
+puzzles with 10-move optimal solutions
+-------------------------------------
+algorithm                num. solved    avg. moves    avg. states tested
+------------------------------------------------------------------------
+random			  10		11.6		10812.8
+BFS			  10		10.0		747.4
+DFS (depth limit 20)	  10 		16.4		27916.4
+DFS (depth limit 50)	  10		46.6		126877.1
+Greedy Search (using h1)   10		97.6		7422.7
+A* (using h1)		  10		10.0		27.3
+
+
+puzzles with 15-move optimal solutions
+-------------------------------------
+algorithm                num. solved    avg. moves    avg. states tested
+------------------------------------------------------------------------
+random			  8		18.75		14360.0
+BFS			  10		15.0		12672.0
+DFS (depth limit 20)	  10		17.8		41282.0	
+DFS (depth limit 50)	  10		48.6		67012.9
+Greedy Search (using h1) 	  7		125.8		6486.7
+A* (using h1)		  10		15.0		313.8
+
+Reflection: As shown in the three experiments that we did, it is obvious that the efficiency of the A* Searcher incorporating the updated priority method upon the Greedy ones is the highest(since it solves all the 8 puzzles with the optimal amounts of moves and least cases tested. 
+All other four searches have each their own deficiency in finding the solution.
+
+
+heuristic h2
+------------
+This heuristic calculates the sum of the number of false rows and columns compared to the Goal State for each tile, and returns the estimate of moves needed to get to the goal state.
+
+
+puzzles with 18-move optimal solutions
+--------------------------------------
+algorithm              num. solved    avg. moves    avg. states tested
+----------------------------------------------------------------------
+Greedy (heuristic h1)	 8		145.75		8345.75
+Greedy (heuristic h2)	 10		74.8		254.2
+# Greedy with any other heuristics
+
+A* (heuristic h1)	10		18.0		1602.0
+A* (heuristic h2)	10		18.0		510.9
+# Greedy with any other heuristics
+
+
+puzzles with 21-move optimal solutions
+--------------------------------------
+algorithm              num. solved    avg. moves    avg. states tested
+----------------------------------------------------------------------
+Greedy (heuristic h1)	 5		104.6		4172.6
+Greedy (heuristic h2)	 10		83.4		397.7
+# Greedy with any other heuristics
+
+A* (heuristic h1)	 10		21.0		6301.7
+A* (heuristic h2)	 10		21.0		1499.6
+# Greedy with any other heuristics
+
+
+puzzles with 24-move optimal solutions
+--------------------------------------
+algorithm              num. solved    avg. moves    avg. states tested
+----------------------------------------------------------------------
+Greedy (heuristic h1)	 6		123.6		2856.1
+Greedy (heuristic h2)	 10		114.0		400.4
+# Greedy with any other heuristics
+
+A* (heuristic h1)	 10		24.0		26948.9
+A* (heuristic h2)	 10		24.0		5303.0
+# Greedy with any other heuristics
+
+
+puzzles with 27-move optimal solutions
+--------------------------------------
+algorithm              num. solved    avg. moves    avg. states tested
+----------------------------------------------------------------------
+Greedy (heuristic h1)	 4		107.5		4285.5
+Greedy (heuristic h2)	 10 		117.0		402.5
+# Greedy with any other heuristics
+
+A* (heuristic h1)	0		0		0
+A* (heuristic h2)	10		27.0		27526.8
+# Greedy with any other heuristics
