@@ -11,4 +11,5 @@ and solving the puzzle involves moving the tiles until you reach the following *
 
 ![Goal State](https://user-images.githubusercontent.com/92423096/168494873-31e698da-2a41-4713-9796-c0c70cf74771.png)
 
-###This Repo contains the Board Class, the State Class and finally the Searcher Class. 
+### This Repo contains the Board Class, the State Class and finally the Searcher Class. 
+
